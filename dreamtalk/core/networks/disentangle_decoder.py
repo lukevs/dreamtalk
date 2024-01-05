@@ -6,8 +6,8 @@ from .transformer import (
     TransformerDecoderLayer,
     TransformerDecoder,
 )
-from core.networks.dynamic_fc_decoder import DynamicFCDecoderLayer, DynamicFCDecoder
-from core.utils import _reset_parameters
+from dreamtalk.core.networks.dynamic_fc_decoder import DynamicFCDecoderLayer, DynamicFCDecoder
+from dreamtalk.core.utils import _reset_parameters
 
 
 def get_decoder_network(

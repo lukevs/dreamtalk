@@ -1,8 +1,8 @@
 import torch.nn as nn
 import torch
 
-from core.networks.transformer import _get_activation_fn, _get_clones
-from core.networks.dynamic_linear import DynamicLinear
+from dreamtalk.core.networks.transformer import _get_activation_fn, _get_clones
+from dreamtalk.core.networks.dynamic_linear import DynamicLinear
 
 
 class DynamicFCDecoderLayer(nn.Module):

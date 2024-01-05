@@ -5,8 +5,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-import generators.flow_util as flow_util
-from generators.base_function import LayerNorm2d, ADAINHourglass, FineEncoder, FineDecoder
+import dreamtalk.generators.flow_util as flow_util
+from dreamtalk.generators.base_function import LayerNorm2d, ADAINHourglass, FineEncoder, FineDecoder
 
 class FaceGenerator(nn.Module):
     def __init__(
