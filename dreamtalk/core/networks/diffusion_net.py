@@ -2,7 +2,7 @@ import math
 import torch
 import torch.nn.functional as F
 from torch.nn import Module
-from core.networks.diffusion_util import VarianceSchedule
+from dreamtalk.core.networks.diffusion_util import VarianceSchedule
 import numpy as np
 
 
@@ -313,7 +313,7 @@ class DiffusionNet(Module):
 
 
 if __name__ == "__main__":
-    from core.networks.diffusion_util import NoisePredictor, VarianceSchedule
+    from dreamtalk.core.networks.diffusion_util import NoisePredictor, VarianceSchedule
 
     diffnet = DiffusionNet(
         net=NoisePredictor(),

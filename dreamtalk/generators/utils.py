@@ -20,9 +20,9 @@ def obtain_seq_index(index, num_frames, radius):
 def get_netG(checkpoint_path, device):
     import yaml
 
-    from generators.face_model import FaceGenerator
+    from dreamtalk.generators.face_model import FaceGenerator
 
-    with open("generators/renderer_conf.yaml", "r") as f:
+    with open("dreamtalk/generators/renderer_conf.yaml", "r") as f:
         renderer_config = yaml.load(f, Loader=yaml.FullLoader)
 
     renderer = FaceGenerator(**renderer_config).to(device)

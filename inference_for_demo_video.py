@@ -11,16 +11,16 @@ from scipy.io import loadmat
 from transformers import Wav2Vec2Processor
 from transformers.models.wav2vec2.modeling_wav2vec2 import Wav2Vec2Model
 
-from configs.default import get_cfg_defaults
-from core.networks.diffusion_net import DiffusionNet
-from core.networks.diffusion_util import NoisePredictor, VarianceSchedule
-from core.utils import (
+from dreamtalk.configs.default import get_cfg_defaults
+from dreamtalk.core.networks.diffusion_net import DiffusionNet
+from dreamtalk.core.networks.diffusion_util import NoisePredictor, VarianceSchedule
+from dreamtalk.core.utils import (
     crop_src_image,
     get_pose_params,
     get_video_style_clip,
     get_wav2vec_audio_window,
 )
-from generators.utils import get_netG, render_video
+from dreamtalk.generators.utils import get_netG, render_video
 
 
 @torch.no_grad()

@@ -2,8 +2,8 @@ import numpy as np
 import torch
 import torch.nn as nn
 from torch.nn import Module
-from core.networks import get_network
-from core.utils import sinusoidal_embedding
+from dreamtalk.core.networks import get_network
+from dreamtalk.core.utils import sinusoidal_embedding
 
 
 class VarianceSchedule(Module):

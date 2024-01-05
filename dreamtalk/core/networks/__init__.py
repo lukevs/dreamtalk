@@ -1,9 +1,9 @@
-from core.networks.generator import (
+from dreamtalk.core.networks.generator import (
     StyleEncoder,
     Decoder,
     ContentW2VEncoder,
 )
-from core.networks.disentangle_decoder import DisentangleDecoder
+from dreamtalk.core.networks.disentangle_decoder import DisentangleDecoder
 
 
 def get_network(name: str):
